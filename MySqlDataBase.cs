@@ -13,5 +13,12 @@ namespace _Scripts
             mycmd.ExecuteReader();
             Debug.Log("Create");
         }
+        //删除一个表
+        public static void DeleteTable(MySqlConnection sqlConnection)
+        {
+            string cmd = "drop table sheet1";
+            MySqlCommand mycmd = new MySqlCommand(cmd, sqlConnection);
+
+        }
     }
 }
